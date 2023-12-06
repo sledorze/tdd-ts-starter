@@ -2,17 +2,17 @@
 
 ## Why TDD?
 
-- TDD is a design tool
-- TDD is a safety net
 - TDD is a productivity tool
-- TDD is a collaboration tool
-- TDD is a specification tool
-- TDD is a documentation tool
-- TDD is a quality tool
+- TDD is a design tool
 - TDD is a learning tool
+- TDD is a quality tool
+- TDD is a safety net
+- TDD is a specification tool
+- TDD is a collaboration tool
 - TDD is a communication tool
+- TDD is a documentation tool
 
-## TDD Rules
+## TDD Rules (the most important part)
 
 - You are not allowed to write any production code unless it is to make a failing unit test pass.
 - You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
@@ -27,4 +27,5 @@
 5. You are done when you have a clean code that works (_No duplication, No smells, No comments_)
 
 <img src="./TDD_Global_Lifecycle.png" width="100%"/>
+
 [source](./TDD_Global_Lifecycle.png)
