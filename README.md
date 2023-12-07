@@ -27,5 +27,3 @@
 5. You are done when you have a clean code that works (_No duplication, No smells, No comments_)
 
 <img src="./TDD_Global_Lifecycle.png" width="100%"/>
-
-[source](./TDD_Global_Lifecycle.png)
