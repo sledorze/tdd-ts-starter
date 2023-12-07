@@ -15,7 +15,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
-    "immer": "^10.0.3"
+    "immer": "^10.0.3",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/testing-library__jest-dom": "^5.14.5",
