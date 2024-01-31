@@ -6,24 +6,32 @@ Implement a stack with the following methods: push, pop, isEmpty, isFull
 
 ### Consider
 
-- What is the expected behavior when pushing to a full stack?
+- What is the expected behavior when pushing to a full stack? (opt for a strategy)
 - What about popping from an empty stack?.
 
-## String calculator
+### To continue
 
-Create a simple String calculator with a method int Add(string numbers)
+- Change the stack size
+- Change strategy for eviction when full
 
-1. The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0) for example “” or “1” or “1,2”
+## Line Wrapper
 
-2. Allow the Add method to handle an unknown amount of numbers
-3. Allow the Add method to handle new lines between numbers (instead of commas).
-4. Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed.
-5. Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1**_2_**3” should return 6
+(This kata is from Robert Martin (Uncle Bob))
 
-### Bonus
+You write a class called Wrapper, that has a single static function named wrap that takes two arguments, a string, and a column number. The function returns the string, but with line breaks inserted at just the right places to make sure that no line is longer than the column number. You try to break lines at word boundaries.
 
-1. Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[\*][%]\n1\*2%3” should return 6.
-2. Make sure you can also handle multiple delimiters with length longer than one char
+Like a word processor, break the line by replacing the last space in a line with a newline.
+
+## City finder
+
+You write a City finder exposing this method:
+
+findCities(x, y, distance) will return all cities in a of radius `distance` in km, centered on (x, y).
+
+You will use an API that return Cities by Blocks of 10km x 10km.
+getCities(x, y)
+
+This API costs a lot and you don't want to make useless calls nor redo some calls more than once per year for a block
 
 ## Reverse Polish Notation Calculator
 
@@ -35,18 +43,3 @@ Calculator methods will be added in increasing order.
 1. enterNumber, add
 2. multiply, divide, subtract
 3. ignore invalid inputs but log them via a logger (provided as a dependency).
-
-## Write a City finder
-
-Write the test using the Behaviour
-
-You are given a cities API roughtly equivalent to the following:
-
-findCities(x, y, distance) will return all cities in a square centered on (x, y) and with a radius of `radius`.
-
-You might consider using (beware, they might expose a radius based API):
-
-> http://geodb-cities-api.wirefreethought.com/
-
-You're tasked to build a city finder App that will allow you to find cities around a specific location and radius.
-Bonus: subsequent calls should be faster than the first one by caching part of requests results (new Cities are not built overnight).
