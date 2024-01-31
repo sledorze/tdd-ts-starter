@@ -14,7 +14,7 @@
 
 ## TDD Rules (> the most important part <)
 
-For TDD to delivers its benefits; the Developper MUST follow very strict rules
+For TDD to delivers its benefits; You, the Developper, MUST follow very strict rules.
 
 - You are not allowed to write any production code unless it is to make a failing unit test pass.
 - You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
