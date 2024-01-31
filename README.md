@@ -12,7 +12,9 @@
 - TDD is a communication tool
 - TDD is a documentation tool
 
-## TDD Rules (the most important part)
+## TDD Rules (> the most important part <)
+
+For TDD to delivers its benefits; the Developper MUST follow very strict rules
 
 - You are not allowed to write any production code unless it is to make a failing unit test pass.
 - You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
